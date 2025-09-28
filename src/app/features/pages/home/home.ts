@@ -13,6 +13,10 @@ export class Home {
   days: number[] = [];
 
   constructor() {
+    let userLogged = localStorage.getItem('isLogged');
+    if (!userLogged || userLogged !== 'true') {
+      window.location.href = '/';
+    }
     const today = new Date();
     const year = today.getFullYear();
     const monthIndex = today.getMonth(); 

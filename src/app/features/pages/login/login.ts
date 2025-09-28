@@ -27,7 +27,7 @@ export class Login {
       let user = JSON.parse(userStr!);
       if (user) {
         if (user.email === userLogin.email && user.password === userLogin.password) {
-          localStorage.setItem('isLoggedIn', 'true');
+          localStorage.setItem('isLogged', 'true');
           this.router.navigate(['/home']);
         } else {
           Swal.fire({

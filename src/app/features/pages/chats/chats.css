@@ -112,7 +112,9 @@ a{
   border: 1px solid rgba(99, 91, 255, 0.5);
 }
 
+
 nav.bottom {
+  background: #0b1021;
   position: fixed;
   bottom: 10px;
   left: 0;
